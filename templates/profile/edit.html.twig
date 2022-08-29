@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Profile{% endblock %}
+
+{% block body %}
+    
+    <section class="container" id='rowEditProfile'>
+        {% include "/partials/dialogBox.html.twig" %}
+        <div class="row ">
+            <div class="col ">
+                <h1 class = "mb-3 text-center">Modifier mes informations</h1>
+                {{ include('profile/_form.html.twig', {'button_label': 'Mettre à jour'}) }}
+                <button id="btnReset"  class="btn btn-warning my-1" href="{{ path('profile_reset', {'id': profile.id})}}" onclick="showDialogBox()" >Reset Profile</button>
+                {{ include('profile/_delete_form.html.twig') }}
+
+            </div>
+        </div>       
+    </section>   
+
+{# <a href="{{ path('profile_index') }}">back to list</a> #}    
+{% endblock %}
+
+{% block javascripts %}
+    <script src="/assets/js/askConfirmation.js" ></script>
+{% endblock %}

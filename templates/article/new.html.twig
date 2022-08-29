@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Article{% endblock %}
+
+{% block body %}
+<div class="container" id="newContainer">
+    <h1>Create new Article</h1>
+<div class="container" id="formContainer">
+    {{ include('article/_form.html.twig') }}
+
+    <a class="btn btn-secondary" href="{{ path('app_article_index') }}">back to list</a>
+</div>
+</div>
+{% endblock %}
+
+{% block javascripts %}
+<script>
+    $('#article_savedPicture').change(function(){
+        alert('changed !');
+    })
+</script>
+{% endblock  %}

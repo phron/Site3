@@ -1,0 +1,210 @@
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* background: rgba(0, 0, 0, 0.8); */
+    z-index: 2;
+  }
+
+  .dialog-box {
+    position: absolute;
+    width: 30%;
+    /* height: 50%; */
+    top: 35%;
+    left: 35%;
+    /* text-align: center; */
+    background: white;   
+  }
+
+  .col#btnClose{
+    text-align: right;
+  }
+
+  .close {
+    cursor: pointer;
+    text-align: right;    
+    background: #550729;
+  }
+
+
+  .close:hover{
+    border: 1px solid #550729;
+  }
+
+
+
+/* -------------------------- GENERAL --------------------------- */
+html{height: 100%}
+
+body  {
+    /* padding-top: 160px; */
+    padding-top: 90px;
+    /* padding-bottom: 100px; */
+    height: 100%;
+}
+
+/* --------- Containers */
+#global{height: 99% ; padding-bottom: 2rem;} /* container div placé juste après body (englobe tout) */
+
+#indexContainer{height: 100%;} /* container pour toutes les pages index */
+#newContainer{height: 100%;} /* container pour toutes les pages new */
+
+#formContainer{height: auto; } /* container pour tous les formulaires */
+
+/* --------- Titres */
+h1.mb-3 {
+    font-family: 'Square Peg';
+    font-size: 4rem;
+}
+
+h2.mb-3,
+h3.mb-3{
+    font-family: 'Square Peg';
+    font-size: 3rem;
+}
+
+
+/* --------- Boutons formulaires */
+.btn-primary {
+    color: white !important;
+    background-color: black !important;
+    border-color: black !important;
+}
+
+.btn-update {
+    border: rgb(238, 161, 170);
+    background-color: rgba(238, 161, 170, 0.6) ;
+    color: white;
+}
+
+.btn-update:hover {    
+    color: white;
+    background-color: #eea1aa;
+}
+
+.btn-return{
+    border: #7b073d;
+    background-color: #7b073d;
+    color: white;
+}
+
+.btn-return:hover{
+    color: white;
+    background-color: #550729;
+}
+
+.btn-submit{
+    background-color: #bc0052;
+    color: white;
+}
+
+.btn-submit:hover{    
+    background-color: rgba(188, 0, 82, 0.4);
+    color: white;    
+
+}
+
+.btn-submit{
+    color: white;
+    background-color: rgba(71, 120, 71, 0.663);
+}
+
+input[type='radio']{
+    margin-right: .3rem;
+}
+
+/*----------------------- NAVBAR ------------------------------*/
+
+.navbar{ background-color: #7b0539; }
+
+/* Modification liens barre de navigation */
+.navbar a {
+    font-family: 'Square Peg';
+    font-size: 2rem;
+    color: #eea1aa !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+/* Taille image navbar brand */
+.navbar a img.imgNav{ width:10.5rem; }
+
+/* Liste éléments centre nav */
+#ul1{
+    margin-left: auto; 
+    margin-right:auto
+}
+
+/* Taille logo utilisateur connecté */
+.navbar a img.imgUser{ width: 3rem; }
+
+/* Toggler-Icon */
+.navbar-toggler{
+    color: #eea1aa !important;
+    border: rgb(238, 161, 170) solid;
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(238,161,170)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+}
+
+/* menu droite (menu utilisateur) */
+
+/*
+
+
+/* ---------------------------------------------------------------------------------------------- */
+/*                                FORMULAIRES 
+/* ---------------------------------------------------------------------------------------------- */
+
+/*---------------------------- LOGIN FORM  */
+
+.row#loginRow{
+    width: 45%;
+    margin: .5rem auto;
+}
+
+div#noAccount{font-size : .8rem !important }
+/*---------------------------- REGISTER FORM  */
+
+.row#registerRow{
+    width: 45%;
+    margin: .5rem auto;
+}
+
+input#registration_form_RGPDConsent{margin-left: .6rem !important; } /* --> décale la case à cocher vers la droite */
+
+/* -------------------------- EDIT_PROFILE FORM  */
+
+.row#rowEditProfile{
+    width: 50%;
+    margin: .5rem auto;
+}
+
+div.labelradio label{
+    padding-right: 1.5rem;
+}
+
+/* -------------------------- EDIT_PICTURE FORM  */
+
+.row#rowEditPicture{
+    width:70%;
+    margin: .5rem auto;
+}
+
+.surroundPics{width:fit-content; display: inline-flex;}
+.pics{width:fit-content !important}
+
+
+/*-------------------------------------------- FOOTER ---------------------------------------------------*/
+footer{ 
+    background-color: #7b0539; 
+    font-family: 'Square Peg';
+    font-size: 1.4rem;
+    color: #eea1aa !important;
+    position: relative;
+    bottom: 00px;
+    margin-top: .8rem;
+}

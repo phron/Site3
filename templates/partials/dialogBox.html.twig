@@ -1,0 +1,11 @@
+<div class="overlay row" id="overlay" hidden>
+    <div class="dialog-box col shadow p-3 mb-5 bg-body rounded text-center">
+      <div class="col" id="btnClose">
+            <button onclick="closeDialogBox()" class="close btn text-white">&#10006;</button>
+      </div>
+      <h2>Confirmation</h2>
+      <p>Cette action est irréversible !<br>Voulez-vous continuer ?</p>
+      <button onclick="isConfirmed(true)" class='btn btn-primary'>Oui</button>
+      <button onclick="isConfirmed(false)" class='btn btn-secondary'>Non</button>
+    </div>
+  </div>
